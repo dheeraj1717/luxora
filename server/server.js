@@ -17,9 +17,10 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 dbConnect();
 cloudinaryConnect();
 // create server
-const server = app.listen(process.env.PORT, () => {
+const port = process.env.PORT||8000
+const server = app.listen(port, () => {
   console.log(
-    `Server is running on http://localhost:${process.env.PORT}`
+    `Server is running on http://localhost:${port}`
   );
 });
 
