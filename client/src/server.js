@@ -1,1 +1,1 @@
-export const server = process.env.SERVER;
+export const server = "https://luxora.onrender.com/api/v2"
