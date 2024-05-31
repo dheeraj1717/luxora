@@ -16,7 +16,7 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
 // Middleware
 app.use(cors({
     credentials: true,
-    origin: "http://localhost:3000"
+    origin: process.env.FRONTEND_URL
 }));
 // Middleware to handle file uploads
 app.use(
